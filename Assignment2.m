@@ -1,7 +1,7 @@
 clc
 close all
 clear
-addpath('/Users/francescogiglio/Desktop/Dynamics/Assignment /Assignment2/Functions')
+addpath('/Users/francescogiglio/Desktop/Dynamics/Assignment /Assignment2/Project/Functions')
 
 %% Assignment 2
 %% Data
@@ -44,10 +44,10 @@ plot_mode_shapes(freq0, modes, data.f_max, incidenze, l, gamma, posiz, idb, xy);
 plot_frequency_response(X, f, idb);
 
 %% FRF comparison
-frf_comparison(MFF, CFF, KFF, modes, om, f, idb, ndof)
+frf_comparison(MFF, CFF, KFF, modes, om, f, idb, ndof);
 
 %% Considering the weight of the structure
-[V_def_A, max_vertical_disp] = compute_static_deflection_due_to_gravity(M, KFF, idb, ndof, incidenze, l, gamma, posiz, xy)
+[V_def_A, max_vertical_disp] = compute_static_deflection_due_to_gravity(M, KFF, idb, ndof, incidenze, l, gamma, posiz, xy);
 
 %% Reducing maximum deflection of A (new structure)
-new_structure(data, total_mass)
+new_structure(data, total_mass);

@@ -53,7 +53,7 @@ Kmod = Phi'*KFF*Phi;
 Cmod = Phi'*CFF*Phi;  
 
 %% moving load
-Mass=1; %[Kg]
+Mass=100; %[Kg]
 v_M=2; %[m/s]
 dt=0.001;
 dx=v_M*dt;
